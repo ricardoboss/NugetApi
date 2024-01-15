@@ -1,0 +1,154 @@
+{
+  "version": "3.0.0",
+  "resources": [
+    {
+      "@id": "https://localhost:7156/query",
+      "@type": "SearchQueryService",
+      "comment": "Query endpoint of NuGet Search service (primary)"
+    },
+    {
+      "@id": "https://localhost:7156/autocomplete",
+      "@type": "SearchAutocompleteService",
+      "comment": "Autocomplete endpoint of NuGet Search service (primary)"
+    },
+    {
+      "@id": "https://localhost:7156/",
+      "@type": "SearchGalleryQueryService/3.0.0-rc",
+      "comment": "Azure Website based Search Service used by Gallery (primary)"
+    },
+    {
+      "@id": "https://localhost:7156/registrations/",
+      "@type": "RegistrationsBaseUrl",
+      "comment": "Base URL of Azure storage where NuGet package registration info is stored"
+    },
+    {
+      "@id": "https://localhost:7156/packages/",
+      "@type": "PackageBaseAddress/3.0.0",
+      "comment": "Base URL of where NuGet packages are stored, in the format https://localhost:7156/packages/{id-lower}/{version-lower}/{id-lower}.{version-lower}.nupkg"
+    },
+    {
+      "@id": "https://localhost:7156/api/v2/package",
+      "@type": "PackagePublish/2.0.0"
+    },
+    {
+      "@id": "https://localhost:7156/api/v2/symbolpackage",
+      "@type": "SymbolPackagePublish/4.9.0",
+      "comment": "The gallery symbol publish endpoint."
+    },
+    {
+      "@id": "https://localhost:7156/query",
+      "@type": "SearchQueryService/3.0.0-rc",
+      "comment": "Query endpoint of NuGet Search service (primary) used by RC clients"
+    },
+    {
+      "@id": "https://localhost:7156/query",
+      "@type": "SearchQueryService/3.0.0-rc",
+      "comment": "Query endpoint of NuGet Search service (secondary) used by RC clients"
+    },
+    {
+      "@id": "https://localhost:7156/query",
+      "@type": "SearchQueryService/3.5.0",
+      "comment": "Query endpoint of NuGet Search service (primary) that supports package type filtering"
+    },
+    {
+      "@id": "https://localhost:7156/query",
+      "@type": "SearchQueryService/3.5.0",
+      "comment": "Query endpoint of NuGet Search service (secondary) that supports package type filtering"
+    },
+    {
+      "@id": "https://localhost:7156/autocomplete",
+      "@type": "SearchAutocompleteService/3.0.0-rc",
+      "comment": "Autocomplete endpoint of NuGet Search service (primary) used by RC clients"
+    },
+    {
+      "@id": "https://localhost:7156/autocomplete",
+      "@type": "SearchAutocompleteService/3.0.0-rc",
+      "comment": "Autocomplete endpoint of NuGet Search service (secondary) used by RC clients"
+    },
+    {
+      "@id": "https://localhost:7156/autocomplete",
+      "@type": "SearchAutocompleteService/3.5.0",
+      "comment": "Autocomplete endpoint of NuGet Search service (primary) that supports package type filtering"
+    },
+    {
+      "@id": "https://localhost:7156/autocomplete",
+      "@type": "SearchAutocompleteService/3.5.0",
+      "comment": "Autocomplete endpoint of NuGet Search service (secondary) that supports package type filtering"
+    },
+    {
+      "@id": "https://localhost:7156/registrations/",
+      "@type": "RegistrationsBaseUrl/3.0.0-rc",
+      "comment": "Base URL of Azure storage where NuGet package registration info is stored used by RC clients. This base URL does not include SemVer 2.0.0 packages."
+    },
+    {
+      "@id": "https://localhost:7156/packages/{id}/{version}/ReportAbuse",
+      "@type": "ReportAbuseUriTemplate/3.0.0-rc",
+      "comment": "URI template used by NuGet Client to construct Report Abuse URL for packages used by RC clients"
+    },
+    {
+      "@id": "https://localhost:7156/registrations/{id-lower}/index.json",
+      "@type": "PackageDisplayMetadataUriTemplate/3.0.0-rc",
+      "comment": "URI template used by NuGet Client to construct display metadata for Packages using ID"
+    },
+    {
+      "@id": "https://localhost:7156/registrations/{id-lower}/{version-lower}.json",
+      "@type": "PackageVersionDisplayMetadataUriTemplate/3.0.0-rc",
+      "comment": "URI template used by NuGet Client to construct display metadata for Packages using ID, Version"
+    },
+    {
+      "@id": "https://localhost:7156/query",
+      "@type": "SearchQueryService/3.0.0-beta",
+      "comment": "Query endpoint of NuGet Search service (primary) used by beta clients"
+    },
+    {
+      "@id": "https://localhost:7156/query",
+      "@type": "SearchQueryService/3.0.0-beta",
+      "comment": "Query endpoint of NuGet Search service (secondary) used by beta clients"
+    },
+    {
+      "@id": "https://localhost:7156/autocomplete",
+      "@type": "SearchAutocompleteService/3.0.0-beta",
+      "comment": "Autocomplete endpoint of NuGet Search service (primary) used by beta clients"
+    },
+    {
+      "@id": "https://localhost:7156/autocomplete",
+      "@type": "SearchAutocompleteService/3.0.0-beta",
+      "comment": "Autocomplete endpoint of NuGet Search service (secondary) used by beta clients"
+    },
+    {
+      "@id": "https://localhost:7156/registrations/",
+      "@type": "RegistrationsBaseUrl/3.0.0-beta",
+      "comment": "Base URL of Azure storage where NuGet package registration info is stored used by Beta clients. This base URL does not include SemVer 2.0.0 packages."
+    },
+    {
+      "@id": "https://localhost:7156/packages/{id}/{version}/ReportAbuse",
+      "@type": "ReportAbuseUriTemplate/3.0.0-beta",
+      "comment": "URI template used by NuGet Client to construct Report Abuse URL for packages"
+    },
+    {
+      "@id": "https://localhost:7156/packages/{id}/{version}?_src=template",
+      "@type": "PackageDetailsUriTemplate/5.1.0",
+      "comment": "URI template used by NuGet Client to construct details URL for packages"
+    },
+    {
+      "@id": "https://localhost:7156/registrations/",
+      "@type": "RegistrationsBaseUrl/Versioned",
+      "clientVersion": "4.3.0-alpha",
+      "comment": "Base URL of Azure storage where NuGet package registration info is stored in GZIP format. This base URL includes SemVer 2.0.0 packages."
+    },
+    {
+      "@id": "https://localhost:7156/vulnerabilities/index.json",
+      "@type": "VulnerabilityInfo/6.7.0",
+      "comment": "The endpoint for discovering information about vulnerabilities of packages in this package source."
+    },
+    {
+      "@id": "https://localhost:7156/catalog/0/index.json",
+      "@type": "Catalog/3.0.0",
+      "comment": "Index of the NuGet package catalog."
+    }
+  ],
+  "@context": {
+    "@vocab": "http://schema.nuget.org/services#",
+    "comment": "http://www.w3.org/2000/01/rdf-schema#comment"
+  }
+}

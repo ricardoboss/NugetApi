@@ -1,0 +1,17 @@
+{
+  "version": "3.0.0",
+  "resources": [
+    {
+      "@id": "https://localhost:7156/packages/",
+      "@type": "PackageBaseAddress",
+    },
+    {
+      "@id": "https://localhost:7156/publish",
+      "@type": "PackagePublish/2.0.0"
+    }
+  ],
+  "@context": {
+    "@vocab": "http://schema.nuget.org/services#",
+    "comment": "http://www.w3.org/2000/01/rdf-schema#comment"
+  }
+}

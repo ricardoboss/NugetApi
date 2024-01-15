@@ -1,0 +1,2 @@
+GET https://localhost:7156/query?q=trenz&skip=0&take=20&prerelease=false&semVerLevel=2.0.0
+Accept: application/json

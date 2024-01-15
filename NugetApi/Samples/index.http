@@ -1,0 +1,2 @@
+GET https://localhost:7156/index.json
+Accept: application/json
